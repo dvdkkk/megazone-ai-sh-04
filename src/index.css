@@ -3114,6 +3114,175 @@ button, input, select {
   color: #000000;
 }
 
+/* Right Consultation CTA Card styles */
+.apply-consult-card {
+  padding: 36px 40px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+}
+
+.apply-consult-badge-row {
+  margin-bottom: 16px;
+  display: flex;
+}
+
+.apply-consult-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(91, 80, 246, 0.08);
+  border: 1px solid rgba(91, 80, 246, 0.15);
+  color: #5b50f6;
+  font-size: 13px;
+  font-weight: 800;
+  padding: 6px 14px;
+  border-radius: 9999px;
+  letter-spacing: -0.01em;
+}
+
+.apply-pulse-dot {
+  width: 7px;
+  height: 7px;
+  background-color: #ef4444;
+  border-radius: 50%;
+  position: relative;
+  display: inline-block;
+}
+
+.apply-pulse-dot::after {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #ef4444;
+  border-radius: 50%;
+  animation: pulse-ring 1.5s infinite ease-out;
+  opacity: 0.8;
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.4);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1.3);
+    opacity: 0;
+  }
+}
+
+.apply-consult-title {
+  font-size: 28px;
+  font-weight: 900;
+  color: #000000;
+  letter-spacing: -0.03em;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.apply-consult-title .purple-dot {
+  color: #5b50f6;
+  font-size: 16px;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+.apply-consult-desc {
+  font-size: 15px;
+  color: #475569;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  font-weight: 500;
+  letter-spacing: -0.015em;
+}
+
+.apply-consult-checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.apply-checklist-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  color: #1e293b;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.apply-check-icon {
+  color: #5b50f6;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* Premium Consultation Button (apply-naver-btn) */
+.apply-naver-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #03cf5d; /* Naver green */
+  color: #ffffff !important;
+  text-decoration: none;
+  padding: 18px 24px;
+  border-radius: 16px;
+  font-weight: 800;
+  box-shadow: 0 8px 20px rgba(3, 207, 93, 0.25);
+  transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.apply-naver-btn:hover {
+  background: #02b04f;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(3, 207, 93, 0.35);
+}
+
+.apply-naver-btn:active {
+  transform: translateY(0);
+}
+
+.apply-naver-btn-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.apply-naver-logo-tag {
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 900;
+  padding: 3px 8px;
+  border-radius: 6px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.apply-naver-btn-text {
+  font-size: 18px;
+  letter-spacing: -0.02em;
+}
+
+.apply-naver-btn-icon {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  transition: transform 0.2s ease;
+}
+
+.apply-naver-btn:hover .apply-naver-btn-icon {
+  transform: translateX(3px);
+}
+
 @media (max-width: 640px) {
   .apply-form-card {
     padding: 20px 16px;
